@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+/* Boostrap & CSS */
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './assets/css/layout.css'
+import 'animate.css'
+/* APP */
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import { Container } from 'react-bootstrap';
+/*Pages & Partials*/
+import PageHome from './pages/Home'
+import PageLevelBasic from './pages/LevelBasic'
+import Page404 from './pages/errors/ErrorNotFound'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Container fluid>
+        <Routes>
+          <Route exact path="/" element={<PageHome />} />
+          <Route path="/level-basic" element={<PageLevelBasic />} />
+          <Route path="*" element={<Page404 />} />
+        </Routes>
+      </Container>
+    </BrowserRouter>
   );
 }
 
