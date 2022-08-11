@@ -6,6 +6,7 @@ import 'animate.css'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import { Container } from 'react-bootstrap';
 /*Pages & Partials*/
+import PageDocs from './pages/Docs'
 import PageHome from './pages/Home'
 import PageLevelBasic from './pages/LevelBasic'
 import Page404 from './pages/errors/ErrorNotFound'
@@ -17,6 +18,7 @@ function App() {
       <Container fluid>
         <Routes>
           <Route exact path="/" element={<PageHome />} />
+          <Route exact path="/docs" element={<PageDocs />} />
           <Route path="/level-basic" element={<PageLevelBasic />} />
           <Route path="*" element={<Page404 />} />
         </Routes>

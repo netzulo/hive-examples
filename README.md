@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Need to know:
+
+1. RPC url : ``https://api.hive-engine.com/rpc``
+2. Explorer url: ``https://hive-engine.rocks/nfts``
+3. Libreria JS (doc): ``https://github.com/hive-engine/sscjs``
+
+## EXAMPLES DOC
+
+1. nfts
+```
+Name                  	Symbol	Issuer
+-----------------------------------------
+
+ HashkingsNFT	          HMOTA	  hashkings
+ Hashkings Farm Assets	HKFARM	hashkings
+```
+
+
 
 ## Available Scripts
 

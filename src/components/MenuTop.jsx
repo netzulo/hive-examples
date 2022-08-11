@@ -7,7 +7,7 @@ const MenuTop = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">HIVE examples</Navbar.Brand>
+        <Navbar.Brand href="/">HIVE examples</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -15,7 +15,7 @@ const MenuTop = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="/docs">Docs</Nav.Link>
             <NavDropdown title="level-basic" id="menuLevelBasic">
               <NavDropdown.Item href="/level-basic#ExampleOne">exampleOne</NavDropdown.Item>
               <NavDropdown.Item href="/level-basic#ExampleTwo">exampleTwo</NavDropdown.Item>

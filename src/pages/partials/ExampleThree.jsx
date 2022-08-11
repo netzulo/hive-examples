@@ -3,7 +3,7 @@ const ExampleThree = () => {
 
   return (
     <>
-      <p>HTML of example THREE</p>
+      <p id="ExampleThree">HTML of example THREE</p>
     </>
   )
 }
