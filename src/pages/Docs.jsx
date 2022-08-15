@@ -47,6 +47,18 @@ const Docs = () => {
 
         <hr />
         <h4>3. Tokens: metodos/funciones</h4>
+        <p>3.1 Creando una librería propia, metodos, sintaxis y ejemplo de uso</p>
+        <pre>
+        {`
+          import { Url, Provider, getToken, getAccountBalances, getAccountsBalances, getPrice } from '../../services/HiveEngine'
+
+          getToken(provider, 'BUDS').then((data, err)=>{})
+          getAccountBalances(provider, 'hk-staking', 'SWAP.HIVE').then((data, err)=>{})
+          getAccountBalances(provider, 'hk-staking', 'BUDS').then((data, err)=>{})
+          getAccountsBalances(provider, 'hk-staking', 'BUDSX', 1000, 0).then((data, err)=>{}
+          getPrice(provider, 'BUDS', 'SWAP.HIVE').then((data, err)=>{})
+        `}
+        </pre>
       </section>
       <footer></footer>
     </>
